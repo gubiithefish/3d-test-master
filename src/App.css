@@ -1,0 +1,39 @@
+body {
+    font-family: Sans-serif;
+    font-size: 11px;
+    background: #E5E2E0;
+  }
+
+  .slice {
+    cursor: pointer;
+  }
+  
+  .slice .main-arc {
+    stroke: #E5E2E0;
+    stroke-width: 1px;
+  }
+  
+  .slice .hidden-arc {
+    fill: none;
+  }
+  
+  .slice text {
+    pointer-events: none;
+    dominant-baseline: middle;
+    text-anchor: middle;
+  }
+
+main {
+  position: fixed;
+  top: 4%;
+  left: 0.5%;
+  background: whitesmoke;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  height: 96vh;
+  justify-content: flex-start;
+  margin: 0 auto;
+  text-align: left;
+  width: 15vw;
+}
