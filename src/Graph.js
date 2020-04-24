@@ -13,7 +13,7 @@ export default class Graph extends Component {
     }
     componentDidUpdate(prevProps) {
         if (prevProps.dataUrl !== this.props.dataUrl) {
-            console.log('url changed');
+            console.log('url changed2');
             this.createGraph(this.props.dataUrl);
         }
     }
