@@ -21,6 +21,11 @@ class App extends Component {
     this.setState({dataUrl : 'https://gist.githubusercontent.com/gubiithefish/ec1f7d35256ffd350da65a873025d2f6/raw/9233286e8c4c23ab6c786a6709a2795ef6a8b7d4/first.json'})
   }
 
+  changeUrl2 = () => {
+    document.getElementById("d3node").innerHTML = "";
+    this.setState({dataUrl : 'https://gist.githubusercontent.com/gubiithefish/17ac0b0bdbb1935a855e48360fde4f01/raw/519d37dc937447e38d590822e2ed6a8918b4aeda/third.json'})
+  }
+
   lol = () => {
     //console.log(document.getElementById("d3node").childNodes[0].childElementCount)
     console.log(document.getElementsByClassName('email')[0].innerHTML)
@@ -50,17 +55,14 @@ class App extends Component {
   render() {
     return (
       <div>
-        <button onClick={() => this.changeUrl()} >Example1</button>
-        <button onClick={() => this.clearBox()} >Example2</button>
-        <button onClick={() => this.lol()} >count</button>
-        <button onClick={() => this.mikkuelsprogram()} >Done</button>
-        <button onClick={() => this.visibleMailsToConsole()} >Log visible emails</button>
+        <button onClick={() => this.changeUrl()} >Sort1: Industry, Geo, CompanyType</button>
+        <button onClick={() => this.clearBox()} >Sort2: Geo, Industry, CompanyType</button>
+        <button onClick={() => this.changeUrl2()} >Sort3: Primary SDG, Geo, CompanyType</button>
+        <button onClick={() => this.visibleMailsToConsole()} >Save mails</button>
         <button onClick={() => this.clearMailBox()} >Clear mails</button>
         <Graph dataUrl={this.state.dataUrl} />
 
-        <main id="mainz">
-
-        </main>
+        <main id="mainz"></main>
       </div>
     )
   }
