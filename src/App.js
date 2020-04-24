@@ -7,18 +7,18 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      dataUrl: 'https://gist.githubusercontent.com/gubiithefish/b1c5f9046dfe9f91f65c4f126bf35645/raw/2fd925105dc46ec000dab28f2b181e763b6856cb/lol.json'
+      dataUrl: 'https://gist.githubusercontent.com/gubiithefish/ec1f7d35256ffd350da65a873025d2f6/raw/9233286e8c4c23ab6c786a6709a2795ef6a8b7d4/first.json'
     }
   }
 
   changeUrl = () => {
     document.getElementById("d3node").innerHTML = "";
-    this.setState({dataUrl : 'https://gist.githubusercontent.com/mbostock/4348373/raw/85f18ac90409caa5529b32156aa6e71cf985263f/flare.json'})
+    this.setState({dataUrl : 'https://gist.githubusercontent.com/gubiithefish/0b40cc51481c16d737c698ccaf7f3996/raw/29f85e058a3bee8d9575baff09de64913e7076f0/second.json'})
   }
 
   clearBox = () => {
     document.getElementById("d3node").innerHTML = "";
-    this.setState({dataUrl : 'https://gist.githubusercontent.com/gubiithefish/b1c5f9046dfe9f91f65c4f126bf35645/raw/2fd925105dc46ec000dab28f2b181e763b6856cb/lol.json'})
+    this.setState({dataUrl : 'https://gist.githubusercontent.com/gubiithefish/ec1f7d35256ffd350da65a873025d2f6/raw/9233286e8c4c23ab6c786a6709a2795ef6a8b7d4/first.json'})
   }
 
   lol = () => {
